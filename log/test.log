@@ -1,0 +1,501 @@
+  [1m[36m (4.8ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 612ms (Views: 611.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 20ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (4.6ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (101.5ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "text" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (100.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (110.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (100.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140418194940')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:06:41', '2014-04-18 20:06:41', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:06:41', '2014-04-18 20:06:41', 298486374)[0m
+  [1m[35m (104.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:08:06', '2014-04-18 20:08:06', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:08:06', '2014-04-18 20:08:06', 298486374)[0m
+  [1m[35m (120.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:26:13', '2014-04-18 20:26:13', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:26:13', '2014-04-18 20:26:13', 298486374)[0m
+  [1m[35m (113.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:26:13.459220"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:26:13.459220"]]
+  [1m[35m (1.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to 
+Completed 500 Internal Server Error in 31ms
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (3.2ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:26:56', '2014-04-18 20:26:56', 980190962)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:26:56', '2014-04-18 20:26:56', 298486374)[0m
+  [1m[35m (103.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:26:56.793045"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:26:56.793045"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles
+Completed 302 Found in 25ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:27:14', '2014-04-18 20:27:14', 980190962)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:27:14', '2014-04-18 20:27:14', 298486374)[0m
+  [1m[35m (119.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:27:15.091759"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:27:15.091759"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles
+Completed 302 Found in 23ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (2.9ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:28:25', '2014-04-18 20:28:25', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:28:25', '2014-04-18 20:28:25', 298486374)[0m
+  [1m[35m (109.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:28:26.187396"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:28:26.187396"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles
+Completed 302 Found in 19ms (ActiveRecord: 1.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:29:28', '2014-04-18 20:29:28', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:29:28', '2014-04-18 20:29:28', 298486374)[0m
+  [1m[35m (112.0ms)[0m  commit transaction
+  [1m[36m (8.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:29:28.466104"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:29:28.466104"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles
+Completed 302 Found in 20ms (ActiveRecord: 1.5ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:30:58', '2014-04-18 20:30:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:30:58', '2014-04-18 20:30:58', 298486374)[0m
+  [1m[35m (98.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:30:58.943635"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:30:58.943635"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles
+Completed 302 Found in 20ms (ActiveRecord: 1.4ms)
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (10.1ms)[0m  rollback transaction
+  [1m[36mArticle Load (2.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mSQL (116.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = 298486374[0m
+  [1m[35mSQL (122.8ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = 980190962
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (1.8ms)[0m  INSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:32:35', '2014-04-18 20:32:35', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "articles" ("name", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-04-18 20:32:35', '2014-04-18 20:32:35', 298486374)[0m
+  [1m[35m (121.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-04-18 20:32:36.204629"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:32:36.204629"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/articles
+Completed 302 Found in 21ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 19ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mArticle Load (2.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-04-18 20:33:47.767190"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:33:47.767190"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/articles
+Completed 302 Found in 29ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "articles"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.6ms)[0m  begin transaction
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-04-18 20:34:01.666891"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:34:01.666891"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/articles
+Completed 302 Found in 29ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "articles"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mArticle Load (2.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mSQL (128.7ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = 298486374
+  [1m[36mSQL (133.9ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = 980190962[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"name"=>"test_name", "text"=>"texttext"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "articles" ("created_at", "name", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-04-18 20:34:40.760709"], ["name", "test_name"], ["text", "texttext"], ["updated_at", "2014-04-18 20:34:40.760709"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/articles
+Completed 302 Found in 29ms (ActiveRecord: 2.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "articles"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.8ms)[0m  begin transaction
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"name"=>"test_name", "text"=>"texttext"}}
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (3.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.9ms)[0m  begin transaction
+--------------------------------------
+ArticlesControllerTest: test_get_index
+--------------------------------------
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+ArticlesControllerTest: test_post_create
+----------------------------------------
+Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"name"=>"test_name", "text"=>"texttext"}}
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m

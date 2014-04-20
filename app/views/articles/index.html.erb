@@ -1,0 +1,8 @@
+.ul
+	.li
+		= @articles.each do |x| 
+			= x.name
+  <% for @art in @articles %>
+    <li><%= @art.text %></li>
+  <% end %>
+</ul>
