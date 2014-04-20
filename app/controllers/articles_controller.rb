@@ -9,10 +9,8 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    Article.create(name: params["name"], text: params["text"])
-    p Article.first
-    a = Article.destroy(params["id"].to_i)
-    p Article.first
+    atr = Article.find(params["id"])
+    a = Article.destroy(atr.id)
     redirect_to action: :index
   end
 end
