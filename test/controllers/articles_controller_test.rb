@@ -14,4 +14,12 @@ class ArticlesControllerTest < ActionController::TestCase
     assert_response :redirect
     assert_equal Article.count, 1
   end
+
+  test 'delete_destroy' do
+    post :create, {:name => 'test_name', :text => 'texttext'}
+    assert_equal Article.count, 1
+    delete :destroy, {:id => 980190963}
+    assert_response :redirect
+    assert_equal Article.count, 0
+  end
 end
