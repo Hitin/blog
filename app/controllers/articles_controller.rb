@@ -13,4 +13,9 @@ class ArticlesController < ApplicationController
     a = Article.destroy(atr.id)
     redirect_to action: :index
   end
+
+  def update
+    a = Article.update(params["id"], {name: params["name"]})
+    redirect_to action: :index
+  end
 end
