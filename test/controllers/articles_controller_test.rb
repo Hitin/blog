@@ -23,7 +23,6 @@ class ArticlesControllerTest < ActionController::TestCase
     assert_equal Article.count, 0
   end
 
-
   test 'put_update' do
     a = Article.create(:name => 'test_name', :text => 'texttext')
     assert_equal Article.count, 1
@@ -38,6 +37,18 @@ class ArticlesControllerTest < ActionController::TestCase
     a = Article.create(:name => 'test_name', :text => 'texttext')
     assert_equal Article.count, 1
     get :show, {:id => a.id}
+    assert_response :success
+  end
+
+  test 'get_new' do
+    get :new
+    assert_response :success
+  end
+
+  test 'get_edit' do
+    a = Article.create(:name => 'test_name', :text => 'texttext')
+    assert_equal Article.count, 1
+    get :edit, {:id => a.id}
     assert_response :success
   end
 end
