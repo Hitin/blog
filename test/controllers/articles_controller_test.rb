@@ -34,4 +34,10 @@ class ArticlesControllerTest < ActionController::TestCase
     assert_not_equal f1, f2
   end
 
+  test 'get_show' do
+    a = Article.create(:name => 'test_name', :text => 'texttext')
+    assert_equal Article.count, 1
+    get :show, {:id => a.id}
+    assert_response :success
+  end
 end
