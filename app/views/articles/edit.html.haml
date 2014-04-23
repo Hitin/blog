@@ -1,6 +1,3 @@
-%ul
-	%li
-	= @articles.name
-	(
-	= @articles.text
-	)
+=simple_form_for @articles do |f|
+	= f.input :name, label: 'Измените ваше имя : '
+	= f.button :submit 
